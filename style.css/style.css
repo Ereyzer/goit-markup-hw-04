@@ -1,0 +1,511 @@
+:root  {
+         /* ширина сторінки і блоків*/
+    --page-max-width: 1600px;
+    --content-max-width: 1200px;
+
+         /* кольри*/
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196f3;
+    --primari-white-color: #ffffff;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+  line-height: 1.17;
+  color: var(--primary-text-color);
+  letter-spacing: 0.03em;
+  
+  
+  background-color: var(--primari-white-color);
+}
+    /* основні розміри сторінки*/
+
+/*.oll-page {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: var(--page-max-width);
+    background-color: #E5E5E5;
+    background-color: var(--primari-white-color);
+}*/
+
+.container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: var(--content-max-width);
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+        /*CSS правила по тегам в основному скидання 
+        автоматичних налаштувань*/
+
+ul {
+    padding: 0;
+}
+        
+li {
+    list-style-type: none;
+}
+
+address {
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+}
+
+h4{
+    margin: 0;
+}
+
+img {
+    display: block;
+}
+        /*кнопки мають спільні значення */
+
+button {
+    font-family: inherit;
+    border-radius: 4px;
+    border: transparent;
+}
+
+    /*спільне в заголовках*/
+
+h2,
+h3 {
+    font-weight: 700;
+    
+    color: var(--title-text-color);
+}
+
+
+
+
+        /*усе про хедер одразу задам лінію через тег*/
+ 
+header {
+    border-bottom: 1px solid #ECECEC;
+}
+.head {
+    display: flex;
+    
+    justify-content: space-between;
+
+    font-weight: 500;
+    font-size: 14px;
+    
+    letter-spacing: 0.02em;
+}
+
+.nav-container {
+    display: flex;
+  align-items: center;
+}
+
+.site-nav {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 93px;
+    
+}
+
+  .site-nav li {
+    margin-right: 50px;
+    
+}
+  
+  .site-nav li:last-child {
+    margin-right: 0;
+}
+  
+.nav-link {
+    color: var(--title-text-color);
+}
+.site-nav a {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.contact-color-header {
+    color: var(--primary-text-color);
+}
+
+.addres-header{
+    display: flex;
+}
+
+.addres-header a {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+    
+.addres-header a + a {
+    margin-left: 50px;
+}
+
+.studia-page,
+.portfolio-page {
+  text-decoration: none;
+
+  color: var(--accent-color);
+}
+
+.contact:hover ,:focus {
+    color: var(--accent-color);
+}
+
+
+
+
+    /* Логотип і для хедера і для футера*/
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    
+    
+    
+    color: #000000;
+}
+.logo-letters {
+    color: var(--accent-color);
+    
+}
+.logo-letters-waite {
+    color: var(--primari-white-color);
+    
+}    
+  
+        /*усе про футер*/
+        
+        
+footer {
+    width: var(--primary-width-container);
+    margin: 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
+          
+    background-color: #2f303a;
+}
+
+.footer-address {
+    padding: 0;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.footer-address li + li {
+    margin-top: 9px;
+}
+
+.address-link {
+    display: inline-block;
+    
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--primari-white-color);
+}
+
+.contact-color-footer {
+    
+    color: rgba(255, 255, 255, 0.6)
+}
+
+  /* main*/
+
+  /* СТУДІЯ */
+  /* наш герой */
+  .hero {
+    
+    margin-bottom: 0;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    
+  
+    background-color: #C4C4C4;;
+  }
+
+  
+
+  .hero-title {
+    width: 600px;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-left: auto;
+  
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    
+    text-align: center;
+  
+    color: var(--primari-white-color);
+  }
+
+  /*кнопка замовити послугу*/
+.button-hero {
+    display: block;
+    padding: 10px 32px;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+  
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    
+  
+    background-color: var(--accent-color);
+    color: var(--primari-white-color);
+  }
+  .button-hero:hover,
+  :focus {
+    
+    background-color: #188ce8, 100%;
+  }
+
+   /* секція наші плюси */
+
+   .specialiti {
+    margin: 0;
+    padding: 94px 0;
+   }
+
+   .speciality-container {
+    display: flex;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    
+  }
+
+  .speciality-block {
+    display: block;
+    width: 270px;
+  }
+
+  .speciality-container .speciality-block + .speciality-block {
+    margin-left: 30px;
+  }
+  
+  .subtitle {
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 10px;
+    margin-left: 0;
+    font-size: 14px;
+  }
+
+  .text-paragrph {
+    line-height: 1.71;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0;
+  
+  }
+
+  /*чим ми займаємось*/
+
+.engage-title {
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-left: auto;
+    text-align: center;
+
+    font-size: 36px;
+}
+
+.engage {
+    padding: 0 0 94px 0;
+}
+
+.engage-container {
+    display: flex;
+    justify-content: space-between;
+    
+    margin: 0 auto 0 auto;
+   /* padding-bottom: 94px;*/
+    
+}
+
+/* наша команда */
+
+.team {
+    margin: 0;
+    padding: 94px 0;
+    background-color: #f5f4fa;
+}
+.team-title {
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-left: auto;
+    text-align: center;
+
+    font-size: 36px;
+}
+
+.team-container {
+  
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+.team-card {
+    width: 270px;
+    text-align: center;
+    border-radius: 4px;
+  
+    background-color: var(--primari-white-color);
+}
+
+
+
+.team-card-text {
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    font-size: 16px;
+    line-height: 1.19;
+
+    font-weight: 400;
+}
+
+.team-name{
+    margin-bottom: 10px;
+    font-weight: 500;
+
+    color: var(--title-text-color);
+}
+
+/* сторінка портфоліо */
+
+.content-container {
+    text-align: center;
+    
+    margin: 0 auto;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    
+}
+
+.filter-container {
+    display: inline-flex;
+    
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-left: auto;
+    padding: 0;
+    
+}
+
+.filter-container li + li {
+    margin-left: 8px;
+}
+
+.button-filter {
+    display: inline-block;
+    
+    padding: 6px 22px;
+    line-height: 1.63;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: inherit;
+  
+    background-color: #f5f4fa;
+}
+
+.button-filter:focus ,
+.button-filter:hover {
+  background-color: var(--accent-color);
+  color: var(--primari-white-color);
+}
+
+.button-filter:active {
+  line-height: 1.63;
+
+  background-color: var(--accent-color);
+  color: var(--primari-white-color);
+}
+
+.primari-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+    
+.portfolio-card {
+      
+    margin-top: 30px;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 30px;
+    width: 370px;
+    text-align: left;
+    background-color: var(--primari-white-color);
+}
+    
+.portfolio-card-text {
+    border: 1px solid #EEEEEE;
+    padding: 20px 24px;
+}
+
+.portfolio-card:nth-child(3n+1) {
+    margin-left: 0;
+}
+    
+.portfolio-card:nth-child(-n+3) {
+    margin-top: 0;
+}
+    
+    
+    
+    
+.portfolio-title {
+    line-height: 2;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: none;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 4px;
+    margin-left: 0;
+    letter-spacing: 0.06em;
+}
+    
+.portfolio-paragraph {
+    line-height: 1.88;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0;
+      
+    
+    color: var(--primary-text-color);
+}
+    
