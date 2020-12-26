@@ -318,10 +318,28 @@ footer {
   .speciality-block::before {
       content: "";
       display: block;
-      width: 270px;
+      
       height: 120px;
-
+      background-size: 70px;
+      background-repeat: no-repeat;
+      background-position: center;
       background-color: #F5F4FA;
+  }
+
+  .icon-antenna::before {
+    background-image: url(../img/svg/antenna.svg);
+  }
+
+  .icon-clock::before {
+    background-image: url(../img/svg/clock.svg);
+  }
+
+  .icon-diagram::before {
+    background-image: url(../img/svg/diagram.svg);
+  }
+
+  .icon-astronaft::before {
+    background-image: url(../img/svg/astronaut.svg);
   }
 
   .speciality-container .speciality-block + .speciality-block {
@@ -330,7 +348,7 @@ footer {
   
   .subtitle {
     text-transform: uppercase;
-    margin-top: 0;
+    margin-top: 30px;
     margin-right: 0;
     margin-bottom: 10px;
     margin-left: 0;
