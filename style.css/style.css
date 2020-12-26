@@ -231,11 +231,23 @@ footer {
   /* наш герой */
   .hero {
     
+    margin-right: auto;
     margin-bottom: 0;
+    margin-left: auto;
     padding-top: 200px;
     padding-bottom: 200px;
     
-  
+    max-width: var(--page-max-width);
+
+    background-image: linear-gradient(
+         to right,
+         rgba(47, 48, 58, 0.4),
+         rgba(47, 48, 58, 0.4)
+        ),
+        url(../img/hero-bg-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     background-color: #C4C4C4;;
   }
 
@@ -301,6 +313,15 @@ footer {
   .speciality-block {
     display: block;
     width: 270px;
+  }
+
+  .speciality-block::before {
+      content: "";
+      display: block;
+      width: 270px;
+      height: 120px;
+
+      background-color: #F5F4FA;
   }
 
   .speciality-container .speciality-block + .speciality-block {
